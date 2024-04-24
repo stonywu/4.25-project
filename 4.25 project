@@ -1,0 +1,28 @@
+let x = [130,20,70,230,150,350,300,180,200,340];
+let y = [20,40,50,60,70,80,90,100,200,230];
+
+  function setup(){
+  createCanvas(400,400);
+}
+function draw(){
+
+  background(40);
+
+  for(let i = 0; i < x.length; i++){
+    y[i]+=1;
+    if(y[i]>400){
+      y[i]=0;
+    }
+  }
+  ellipse(x[0],y[0],30);
+  ellipse(x[1],y[1],30);
+  ellipse(x[2],y[2],30);
+  ellipse(x[3],y[3],30);
+  ellipse(x[4],y[4],30);
+  ellipse(x[5],y[5],30);
+  ellipse(x[6],y[6],30);
+  ellipse(x[7],y[7],30);
+  ellipse(x[8],y[8],30);
+  ellipse(x[9],y[9],30);
+  
+}
